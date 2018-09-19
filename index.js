@@ -1,3 +1,5 @@
 $(document).ready(function (){
-  $.get('')
+  $.get('https://api.github.com/search/repositories?q=${searchTerms}', function() {
+    
+  })
 });
