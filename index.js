@@ -14,4 +14,6 @@ $(document).ready(function (){
   });
 });
 
-let showCommits = ()
+let showCommits = (el) => {
+  
+}
