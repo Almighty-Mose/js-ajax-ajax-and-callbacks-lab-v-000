@@ -10,6 +10,6 @@ $(document).ready(function (){
         </div>
       </div><br></br>`).join("");
     
-  $('#results').html(results);
+    $('#results').html(results);
   });
 });
