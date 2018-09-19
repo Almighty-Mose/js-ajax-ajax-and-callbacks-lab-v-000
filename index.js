@@ -1,6 +1,6 @@
 $(document).ready(function (){
   $.get('https://api.github.com/search/repositories?q=${searchTerms}', function(response) {
   
-  $.(#results).html(responseHTML);
+  $.('#results').html(responseHTML);
   })
 });
