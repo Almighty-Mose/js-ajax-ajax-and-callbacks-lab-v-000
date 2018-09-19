@@ -1,5 +1,5 @@
-$(document).ready(function (){
-  $.get('https://api.github.com/search/repositories?q=${searchTerms}', function(data) {
+let searchRepositories = (searchTerms) => {
+$.get('https://api.github.com/search/repositories?q=${searchTerms}', function(data) {
     const results = data.items.map(r => 
     `<div>
       <img class="avatar" src="${r.owner.avatar_url}" alt="${r.owner.login}'s Avatar Image">
@@ -12,8 +12,11 @@ $(document).ready(function (){
     
     $('#results').html(results);
   });
+};
+
+$(document).ready(function (){
 });
 
 let showCommits = (el) => {
   
-}
+};
